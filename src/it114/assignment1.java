@@ -55,17 +55,18 @@ public class assignment1 {
 		
 		//Section 2
 		
-		List<String> oddNum = new ArrayList<String>();
 		List<String> evenNum = new ArrayList<String>();
+		List<String> oddNum = new ArrayList<String>();
 		
+		int int2;
 		for (int i2 = 0; i2 < numbers.size(); i2++) {
 			int number;
 			number = numbers.get(i2);
 			if (number % 2 == 0) {
-				evenNum.add(String(number));
+				evenNum.add((Integer.toString(number)));
 			}
 			else {
-				oddNum.add(String(number));
+				oddNum.add((Integer.toString(number)));
 			}
 		}
 		
@@ -79,13 +80,18 @@ public class assignment1 {
 		}
 		
 		//Part 5
+		int x = myStrings.size(); //this makes x equal to the amount of items in the list
+		for (int i1 = 0; i1 < x; i1++) {  //creating a for loop so that each item in the list is swapped, this ends when i1 is greater than the amount of items in list, aka x
+			int r = (int)(Math.random() * (i+1)); //this takes a 
+			Object swap = myStrings.get(r);
+			myStrings.set(r,  myStrings.get(i1));
+			myStrings.set(i1,(String)swap);
+		}
+		System.out.println("Knuth");
+		for(int i1 = 0; i1< myStrings.size(); i1++) {
+			System.out.println(myStrings.get(i1));
+		}
 		
 		
-		
-	}
-
-	private static String String(int number) {
-		// TODO Auto-generated method stub
-		return null; //this shouldn't be there but I'm not sure how to get the add function to work without it
 	}
 }
