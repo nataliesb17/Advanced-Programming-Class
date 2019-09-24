@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
-import java.util.Random;
 
 public class assignment1 {
 
@@ -58,7 +57,6 @@ public class assignment1 {
 		List<String> evenNum = new ArrayList<String>();
 		List<String> oddNum = new ArrayList<String>();
 		
-		int int2;
 		for (int i2 = 0; i2 < numbers.size(); i2++) {
 			int number;
 			number = numbers.get(i2);
